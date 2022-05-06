@@ -1,0 +1,155 @@
+.Title{
+    
+    text-align: center;
+}
+
+nav{
+  position: relative;
+  margin:  auto ;
+  width: 75%;
+  background-color: black;
+  border-radius: 10px;
+  font-size: 0;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+
+}
+
+nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align:center ;
+}
+
+nav .animation{
+    position: absolute;
+    height: 100%;
+    top:0;
+    z-index: 0;
+    background: red;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+}
+
+a:nth-child(1){
+    width: 20%;
+}
+
+nav .start-lamborgini,a:nth-child(1):hover~.animation{
+    width: 20%;
+    left:0;
+}
+
+a:nth-child(2){
+    width: 20%;
+}
+
+nav .start-ferrari,a:nth-child(2):hover~.animation{
+    width: 20%;
+    left:20%;
+}
+
+a:nth-child(3){
+    width: 20%;
+}
+
+nav .start-bugatti,a:nth-child(3):hover~.animation{
+    width: 20%;
+    left:40%;
+}
+
+a:nth-child(4){
+    width: 20%;
+}
+
+nav .start-mclaren,a:nth-child(4):hover~.animation{
+    width: 20%;
+    left:60%;
+}
+
+a:nth-child(5){
+    width: 20%;
+}
+
+nav .start-porsche,a:nth-child(5):hover~.animation{
+    width: 20%;
+    left:80%;
+}
+
+.welcome{
+    text-align: center;
+    font-size: large;
+}
+
+.mainpic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    border: solid 3px black;
+    border-radius: 8px;
+    padding: 10px;
+    
+}
+
+.wrapper{
+    width: 50%;
+    margin: auto;
+    background: #fff;
+    padding: 45px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.wrapper .input-data{
+height: 18px;
+width: 100%;
+position: relative;
+}
+
+.wrapper .input-data input{
+    height:100%;
+    width: 100%;
+    border:none;
+    font-size: 17px;
+    border-bottom: 2px solid red;
+}
+
+.input-data input:focus ~ label,
+.input-data input:valid ~ label {
+    transform: translateY(-20px);
+    
+}
+
+.wrapper .input-data label{
+    position:absolute;
+    bottom: 18px;
+    left:0;
+    color:black;
+    pointer-events: none;
+    transition: all 0 3s ease;
+}
+
+
+
+.footer{
+    text-align: center;
+    margin-top: 2%;
+
+}
+
+.button{
+    margin-top: 10px;
+    margin-left: 40%;
+    background: white;
+    color:red;
+    border-radius:8px ;
+    width: 20%;
+    padding: 25px;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+    z-index: 0;
+}

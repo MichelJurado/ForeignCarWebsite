@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Forein Car Paradise</title>
+        <link rel = "stylesheet" type="text/css" href="style.css">
+        
+
+    </head>
+
+    <header >
+        <h1 class="Title">
+            Foreign Car Paradise
+        </h1>
+    </header>
+
+    <nav>
+        <a target ="_blank"href ="https://www.carfax.com/Used-Lamborghini_m49?partner=GCF_4&gclid=CjwKCAjw682TBhATEiwA9crl30nbRrd-Eo7mJ5lalND6qLxcjeFVR8sI2veePtW8ul1JgxBGRyxtOBoCCRwQAvD_BwE&gclsrc=aw.ds">Lamborgini</a>
+        <a target ="_blank"href ="https://www.carfax.com/Used-Ferrari_m43">Ferrari</a>
+        <a target ="_blank"href ="https://www.carfax.com/Used-Bugatti_m231">Bugatti</a>
+        <a target ="_blank"href ="https://www.carfax.com/Used-Mclaren_m53">McLaren</a>
+        <a target ="_blank"href ="https://www.carfax.com/Used-Porsche_m28">Porsche</a>
+        <div class="animation start-home"></div>
+    </nav>
+
+
+   <main>
+        <article class="welcome">
+            <p>Welcome, here you will find several listings for your favorite car and car brands.
+                Please feel welcome to browse around and do some shopping, we also have a quiz you can take 
+                to figure out what car is right for you based on your input. </p>
+        </article>
+
+        <figure>
+            <img class="mainpic" src="/Users/mjurado/Documents/FULLSTACK/Projects/CarWebsite/cars.jpg"  />
+        </figure>
+
+
+        <!--Interactive portion-->
+        <div class="wrapper">
+            <div class = "input-data">
+                <input type="text" required id="a">
+                <label>Do you prefer luxury or speed?</label>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="wrapper">
+            <div class = "input-data">
+                <input type="text" required id="b">
+                <label>Do you prefer 4 door or 2 door?</label>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="wrapper">
+            <div class = "input-data">
+                <input type="text" required id="c">
+                <label>v6,v8,v10,v12,v16?</label>
+            </div>
+        </div>
+        
+        <br>
+
+        <div class="wrapper">
+            <div class = "input-data">
+                
+                <label>What is your price range?</label>
+                <select class= input-data>
+                    <option id="h" value="0"></option>
+                    <option id="d" value="1">$100,000-250,000</option>
+                    <option id="e"value="2">$250,000-500,000</option>
+                    <option id="f"value="3">$500,000-1,000,000</option>
+                    <option id="g"value="4">$1,000,000+</option>
+                </select>
+            </div>
+        </div>
+
+
+        <script src = "/Users/mjurado/Documents/FULLSTACK/Projects/CarWebsite/functions.js"></script>
+        <button class="button" type="button" onclick= "yourCar()">Submit</button>
+
+        <div id = "submit-output">
+
+        </div>
+        
+        
+
+        <footer class="footer">
+            Foreign Car Paradise Est 2022
+        </footer>
+   </main>
+</html>
